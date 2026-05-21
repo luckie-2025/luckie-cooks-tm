@@ -1,85 +1,53 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-
-  background: #0f1f16;
-  color: #f5f0e6;
+  font-family: Arial;
+  background: #06150f;
+  color: #eafff4;
 }
 
 header {
-  background: #13271c;
-  padding: 30px;
   text-align: center;
+  padding: 20px;
+  background: #0f2e21;
+  border-bottom: 1px solid #d4af37;
 }
 
 header h1 {
   color: #d4af37;
-  font-size: 3rem;
 }
 
-.tagline {
-  color: #f5f0e6;
-}
-
-nav a {
-  color: #f5f0e6;
-  text-decoration: none;
-  margin: 10px;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #d4af37;
-}
-
-.hero {
-  text-align: center;
-  padding: 60px 20px;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
 }
 
 button {
   background: #d4af37;
-  color: #0f1f16;
-
   border: none;
-  padding: 12px 20px;
-
-  border-radius: 12px;
-
-  font-weight: bold;
-  cursor: pointer;
-
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #f0c850;
-}
-
-.recipe-card {
-  background: #1b3325;
-
-  width: 250px;
-
+  padding: 8px 12px;
   border-radius: 20px;
-
-  overflow: hidden;
-
-  transition: 0.3s;
+  cursor: pointer;
 }
 
-.recipe-card:hover {
-  transform: translateY(-5px);
-
-  background: #244530;
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid #d4af37;
+  background: #0f2e21;
+  color: white;
 }
 
-footer {
-  background: #13271c;
-
-  text-align: center;
-
-  padding: 20px;
-
-  margin-top: 40px;
+.card {
+  background: #0f2e21;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 500px;
+  border: 1px solid rgba(212,175,55,0.2);
 }
