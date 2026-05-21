@@ -2,31 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luckie Cooks ™</title>
-
-  <link rel="stylesheet" href="styles.css">
+  <title>Luckie Cooks™</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
 
-<header>
-  <h1>Luckie Cooks ™</h1>
-  <p>Halal-inspired cooking • Clean UI • Simple flow</p>
-</header>
+  <header class="top-bar">
+    <h1>Luckie Cooks™</h1>
+    <p>🌙 cooking with calm & creativity</p>
+  </header>
 
-<nav>
-  <button onclick="showAll()">Home</button>
-  <button onclick="showSaved()">Saved</button>
-  <button onclick="showCook()">Cook Mode</button>
-</nav>
+  <section class="search-box">
+    <input id="search" placeholder="Search recipes or ingredients..." />
+    <button onclick="searchRecipes()">Search</button>
+  </section>
 
-<input id="search" placeholder="Search episodes..." />
+  <section id="recipes" class="grid"></section>
 
-<main id="app"></main>
+  <nav class="bottom-nav">
+    <button>Home</button>
+    <button>AI Cook</button>
+    <button>Saved</button>
+  </nav>
 
-<script src="data.js"></script>
-<script src="app.js"></script>
-
+  <script src="js/app.js"></script>
 </body>
 </html>
