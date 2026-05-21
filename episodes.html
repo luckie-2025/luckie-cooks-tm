@@ -1,101 +1,215 @@
-<!-- EPISODE 1 -->
+<!DOCTYPE html>
 
-<div class="recipe-card">
+<html lang="en">
 
-  <img
-    src="images/potatos.jpg"
-    alt="Potato Recipe"
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
   >
 
-  <h3>Episode 1</h3>
+  <title>Episodes | Luckie Cooks ™</title>
 
-  <p>
-    potato experiments,
-    comfort food,
-    and survival cooking 🍟
-  </p>
+  <!-- GOOGLE FONTS -->
 
-  <button onclick="watchEpisode1()">
-
-    Watch Episode
-
-  </button>
-
-</div>
-
-
-<!-- EPISODE 2 -->
-
-<div class="recipe-card">
-
-  <img
-    src="images/blueberries.jpg"
-    alt="Blueberry Recipe"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
   >
 
-  <h3>Episode 2</h3>
+  <!-- CSS -->
 
-  <p>
-    blueberries were absolutely
-    demolished in this episode 🫐
-  </p>
+  <link rel="stylesheet" href="style.css">
 
-  <button onclick="watchEpisode2()">
+</head>
 
-    Watch Episode
+<body>
 
-  </button>
+  <!-- ========================= -->
+  <!-- HEADER -->
+  <!-- ========================= -->
 
-</div>
+  <header>
+
+    <h1>Luckie Cooks ™</h1>
+
+    <p class="tagline">
+      tiny kitchen episodes 🌙
+    </p>
+
+    <nav>
+
+      <a href="index.html">Home</a>
+
+      <a href="recipes.html">Recipes</a>
+
+      <a href="episodes.html">Episodes</a>
+
+    </nav>
+
+  </header>
 
 
-<!-- EPISODE 3 -->
+  <!-- ========================= -->
+  <!-- HERO SECTION -->
+  <!-- ========================= -->
 
-<div class="recipe-card">
+  <section class="hero">
 
-  <img
-    src="images/lemonade.jpg"
-    alt="Lemonade"
-  >
+    <p class="arabic">
 
-  <h3>Episode 3</h3>
+      بِسْمِ ٱللَّٰهِ
 
-  <p>
-    homemade lemonade
-    with maximum emotional support 🍋
-  </p>
+    </p>
 
-  <button onclick="watchEpisode3()">
+    <h2>Cooking Episodes 🍳</h2>
 
-    Watch Episode
+    <p>
+      peaceful kitchen chaos,
+      comfort food,
+      and tiny late-night experiments.
+    </p>
 
-  </button>
+  </section>
 
-</div>
-<script>
 
-  function watchEpisode1() {
+  <!-- ========================= -->
+  <!-- EPISODE CARDS -->
+  <!-- ========================= -->
 
-    alert(
-      "Potato episode coming soon 🍟"
-    );
+  <section class="card-section">
 
-  }
 
-  function watchEpisode2() {
+    <!-- POTATO EPISODE -->
 
-    alert(
-      "Blueberry chaos incoming 🫐"
-    );
+    <div class="recipe-card">
 
-  }
+      <img
+        src="images/potatos.jpg"
+        alt="Potato Episode"
+      >
 
-  function watchEpisode3() {
+      <h3>Episode 1 🍟</h3>
 
-    alert(
-      "Lemonade episode loading 🍋"
-    );
+      <p>
+        survival potato engineering
+        with maximum comfort food energy.
+      </p>
 
+      <button onclick="watchEpisode1()">
+
+        Watch Episode
+
+      </button>
+
+    </div>
+
+
+    <!-- BLUEBERRY EPISODE -->
+
+    <div class="recipe-card">
+
+      <img
+        src="images/blueberries.jpg"
+        alt="Blueberry Episode"
+      >
+
+      <h3>Episode 2 🫐</h3>
+
+      <p>
+        blueberries were absolutely
+        destroyed for science.
+      </p>
+
+      <button onclick="watchEpisode2()">
+
+        Watch Episode
+
+      </button>
+
+    </div>
+
+
+    <!-- LEMONADE EPISODE -->
+
+    <div class="recipe-card">
+
+      <img
+        src="images/lemonade.jpg"
+        alt="Lemonade Episode"
+      >
+
+      <h3>Episode 3 🍋</h3>
+
+      <p>
+        homemade lemonade
+        during academic suffering hours.
+      </p>
+
+      <button onclick="watchEpisode3()">
+
+        Watch Episode
+
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+
+  <footer>
+
+    <p>
+      © 2026 Luckie Cooks ™ 🌙
+    </p>
+
+  </footer>
+
+
+  <!-- MAIN JS -->
+
+  <script src="script.js"></script>
+
+
+  <!-- EPISODE ALERTS -->
+
+  <script>
+
+    function watchEpisode1() {
+
+      alert(
+        "Potato episode coming soon 🍟"
+      );
+
+    }
+
+    function watchEpisode2() {
+
+      alert(
+        "Blueberry chaos incoming 🫐"
+      );
+
+    }
+
+    function watchEpisode3() {
+
+      alert(
+        "Lemonade episode loading 🍋"
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>
   }
 
 </script>
