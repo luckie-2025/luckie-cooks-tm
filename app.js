@@ -1,70 +1,29 @@
-const app = document.getElementById("app");
-const search = document.getElementById("search");
-
-const episodes = [
-  {
-    id: 1,
-    title: "Episode 1",
-    desc: "Sweet basics & honey toast"
-  },
-  {
-    id: 2,
-    title: "Episode 2",
-    desc: "Blueberry drinks & mash flow"
-  },
-  {
-    id: 3,
-    title: "Episode 3",
-    desc: "Knife skills & sauces"
-  }
+const recipes = [
+  { name: "Egg Fried Rice", ingredients: "egg, rice, onion" },
+  { name: "Blueberry Drink", ingredients: "blueberry, honey, water" },
+  { name: "Simple Omelette", ingredients: "egg, salt, onion" }
 ];
 
-// 🍽️ Render function
-function render(list) {
-  app.innerHTML = "";
-
-  if (list.length === 0) {
-    app.innerHTML = "<p style='text-align:center;'>No results found 🌙</p>";
-    return;
-  }
-
-  list.forEach(ep => {
-    const card = document.createElement("div");
-    card.className = "card";
-
-    card.innerHTML = `
-      <h3>${ep.title}</h3>
-      <p>${ep.desc}</p>
-    `;
-
-    app.appendChild(card);
-  });
-}
-
-// 🚀 initial load
-render(episodes);
-
-// 🔍 search system
-search.addEventListener("input", (e) => {
-  const q = e.target.value.toLowerCase();
-
-  const filtered = episodes.filter(ep =>
-    ep.title.toLowerCase().includes(q) ||
-    ep.desc.toLowerCase().includes(q)
+function searchRecipes() {
+  const query = document.getElementById("search").value.toLowerCase();
+  const results = recipes.filter(r =>
+    r.name.toLowerCase().includes(query) ||
+    r.ingredients.includes(query)
   );
 
-  render(filtered);
-});
-
-// 🧭 nav helpers (used by buttons in HTML)
-function showAll() {
-  render(episodes);
+  displayRecipes(results);
 }
 
-function showSaved() {
-  app.innerHTML = "<p style='text-align:center;'>Saved feature coming soon ❤️</p>";
-}
+function displayRecipes(list) {
+  const container = document.getElementById("recipes");
+  container.innerHTML = "";
 
-function showCook() {
-  app.innerHTML = "<p style='text-align:center;'>Cook Mode coming soon 🍳</p>";
+  list.forEach(r => {
+    container.innerHTML += `
+      <div class="card">
+        <h3>${r.name}</h3>
+        <p>${r.ingredients}</p>
+      </div>
+    `;
+  });
 }
