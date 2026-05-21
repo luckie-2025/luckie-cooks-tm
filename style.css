@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background: #0f1f16;
+  color: #f5f0e6;
+}
+
+header {
+  background: #13271c;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  color: #d4af37;
+  font-size: 3rem;
+}
+
+.tagline {
+  color: #f5f0e6;
+}
+
+nav a {
+  color: #f5f0e6;
+  text-decoration: none;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+button {
+  background: #d4af37;
+  color: #0f1f16;
+
+  border: none;
+  padding: 12px 20px;
+
+  border-radius: 12px;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #f0c850;
+}
+
+.recipe-card {
+  background: #1b3325;
+
+  width: 250px;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+
+  background: #244530;
+}
+
+footer {
+  background: #13271c;
+
+  text-align: center;
+
+  padding: 20px;
+
+  margin-top: 40px;
+}
